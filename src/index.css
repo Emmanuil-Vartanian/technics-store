@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}

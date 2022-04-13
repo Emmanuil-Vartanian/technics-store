@@ -1,0 +1,17 @@
+const SET_ERROR = '@@app-reducer/SET_ERROR'
+const SET_EFFECT_LOADING = '@@app-reducer/SET_EFFECT_LOADING'
+const CLEAR_EFFECT_LOADING = '@@app-reducer/CLEAR_EFFECT_LOADING'
+const SET_SNACKBAR = '@@app-reducer/SET_SNACKBAR'
+const CLEAR_SNACKBAR = '@@app-reducer/CLEAR_SNACKBAR'
+const PROFILE_CIRRENCY = '@@app-reducer/PROFILE_CIRRENCY'
+const PROFILE_LANGUAGE = '@@app-reducer/PROFILE_LANGUAGE'
+
+export const ActionTypes = {
+  SET_ERROR,
+  SET_EFFECT_LOADING,
+  CLEAR_EFFECT_LOADING,
+  SET_SNACKBAR,
+  CLEAR_SNACKBAR,
+  PROFILE_CIRRENCY,
+  PROFILE_LANGUAGE
+}
