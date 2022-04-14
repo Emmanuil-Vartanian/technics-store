@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import InputField from 'components/FormFields/InputField'
 import Button from 'components/Button'
+import Link from 'components/Link'
 
 export const Container = styled.div`
   display: flex;
@@ -42,4 +43,21 @@ export const InputFieldStyled = styled(InputField)`
 export const ButtonStyled = styled(Button)`
   margin-left: 20px !important;
   padding: 10px 26px !important;
+`
+
+export const LinkStyled = styled(Link)`
+  position: relative;
+`
+
+export const Count = styled.span`
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  font-size: 14px;
+  color: #ffffff;
+  background: #4878a6;
+  border-radius: 64px;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 6px 4px;
 `

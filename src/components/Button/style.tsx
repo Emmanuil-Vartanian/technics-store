@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const ButtonStyled = styled<ButtonProps>(Button)`
   background: #4878a6 !important;
-  text-transform: capitalize !important;
+  text-transform: inherit !important;
   padding: 10px 16px !important;
   font-size: 16px !important;
   :hover {

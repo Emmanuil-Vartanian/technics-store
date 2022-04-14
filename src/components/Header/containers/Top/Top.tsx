@@ -3,7 +3,15 @@ import SearchIcon from '@mui/icons-material/Search'
 import InputAdornment from '@mui/material/InputAdornment'
 import { Form } from 'react-final-form'
 
-import { Container, BlockInfo, Schedule, InputFieldStyled, ButtonStyled } from './style'
+import {
+  Container,
+  BlockInfo,
+  Schedule,
+  InputFieldStyled,
+  ButtonStyled,
+  LinkStyled,
+  Count
+} from './style'
 
 import logo from 'assets/image/logo.png'
 import CompareSvg from 'assets/svg/CompareSvg'
@@ -43,10 +51,23 @@ const Top: React.FC = () => {
                   </InputAdornment>
                 }
               />
-              <EyeSvg />
-              <LikeSvg />
-              <CompareSvg />
-              <CartSvg />
+              <LinkStyled to={ROUTES.HOME_PAGE}>
+                <EyeSvg />
+                <Count>20</Count>
+              </LinkStyled>
+              <LinkStyled to={ROUTES.HOME_PAGE}>
+                <LikeSvg />
+                <Count>20</Count>
+              </LinkStyled>
+              <LinkStyled to={ROUTES.HOME_PAGE}>
+                <CompareSvg />
+                <Count>20</Count>
+              </LinkStyled>
+              <LinkStyled to={ROUTES.HOME_PAGE}>
+                <CartSvg />
+                <Count>20</Count>
+              </LinkStyled>
+
               <ButtonStyled variant="contained">Войти</ButtonStyled>
             </BlockInfo>
           </Container>

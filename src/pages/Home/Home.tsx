@@ -1,16 +1,20 @@
 import React from 'react'
 
-import { Container } from './style'
+import { CategoriesContainer } from './style'
 
 import Categories from './containers/Categories'
 import Slider from './containers/Slider'
+import Products from './containers/Products'
 
 const Home: React.FC = () => {
   return (
-    <Container>
-      <Categories />
-      <Slider />
-    </Container>
+    <div>
+      <CategoriesContainer>
+        <Categories />
+        <Slider />
+      </CategoriesContainer>
+      <Products />
+    </div>
   )
 }
 

@@ -22,7 +22,7 @@ const Slider = () => {
 
   return (
     <ContainerCarousel>
-      <Carousel enableAutoPlay showArrows={false}>
+      <Carousel enableAutoPlay showArrows={false} autoPlaySpeed={4000}>
         {images.map(({ id, src }) => (
           <img key={id} src={src} alt="slider" />
         ))}
