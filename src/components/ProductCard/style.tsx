@@ -1,10 +1,19 @@
 import styled from 'styled-components'
 
+export const CardBlock = styled.div`
+  display: flex;
+  > div:first-child {
+    border-radius: 8px 0px 0px 8px;
+  }
+  > div:last-child {
+    border-radius: 0px 8px 8px 0px;
+  }
+`
+
 export const CardContainer = styled.div`
   background: #ffffff;
   border: 1px solid #eaeaf0;
   box-sizing: border-box;
-  border-radius: 8px 0px 0px 8px;
   max-width: 326px;
   width: 100%;
   padding: 20px;
@@ -48,6 +57,7 @@ export const TitleProduct = styled.div`
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin: 10px 0px 20px;
+  height: 72px;
 `
 
 export const RatingProduct = styled.div`
@@ -95,12 +105,30 @@ export const Price = styled.div`
 `
 
 export const SvgTools = styled.div`
-  > svg {
+  display: flex;
+  > svg,
+  div {
+    border: 1px solid #c8cacb;
     border-radius: 4px;
     cursor: pointer;
+    path:first-child {
+      fill: #c8cacb;
+    }
   }
-  > svg:first-child {
+  > div {
     margin-right: 10px;
+  }
+  > svg:last-child:hover > path {
+    fill: #2a5275;
+  }
+  > div:hover > svg {
+    width: 24px;
+    > path:first-child {
+      fill: #fff;
+    }
+    > path:last-child {
+      fill: red;
+    }
   }
 `
 
