@@ -1,3 +1,4 @@
+import Link from 'components/Link'
 import styled from 'styled-components'
 
 export const CardBlock = styled.div`
@@ -10,7 +11,7 @@ export const CardBlock = styled.div`
   }
 `
 
-export const CardContainer = styled.div`
+export const CardContainer = styled(Link)`
   background: #ffffff;
   border: 1px solid #eaeaf0;
   box-sizing: border-box;
@@ -20,6 +21,10 @@ export const CardContainer = styled.div`
   margin-top: 40px;
   > div:first-child {
     position: relative;
+  }
+  :hover {
+    box-shadow: 0px 5px 10px #eaeaf0;
+    border: none;
   }
 `
 
@@ -58,6 +63,9 @@ export const TitleProduct = styled.div`
   overflow: hidden;
   margin: 10px 0px 20px;
   height: 72px;
+  :hover {
+    color: #4878a6;
+  }
 `
 
 export const RatingProduct = styled.div`

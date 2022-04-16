@@ -5,6 +5,7 @@ import { persistReducer, persistCombineReducers } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
 import appReducer, { StateToProps as AppInitialStateType } from 'containers/App/store/reducers'
+import productsReducer from 'pages/Home/store/reducers'
 
 export interface State {
   // auth: AuthReducer
@@ -14,12 +15,9 @@ export interface State {
   entities: Record<string, any>
 }
 
-const wizardFormPersistConfig = {
-  key: 'wizardForm',
-  storage
-}
-
-const entitiesReducer = combineReducers({})
+const entitiesReducer = combineReducers({
+  products: productsReducer
+})
 
 const persistConfig = {
   key: 'root',

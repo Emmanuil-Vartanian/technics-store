@@ -34,7 +34,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ products }) => {
     <CardBlock>
       {products.map(
         ({ id, title, type, image, newest, hit, price, oldPrice, discountInPercent }) => (
-          <CardContainer key={id}>
+          <CardContainer to={'#'} key={id}>
             <div>
               <img src={image} alt="Гироскутеры" />
               <InfoProduct>
